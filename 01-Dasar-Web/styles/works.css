@@ -1,0 +1,43 @@
+.works section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.works-content {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: space-between;
+}
+
+.works-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 30%;
+  text-align: center;
+  row-gap: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .works section {
+    text-align: center;
+  }
+
+  .works-content {
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+  }
+
+  .works-card {
+    width: 90%;
+    padding: 2rem;
+  }
+}
