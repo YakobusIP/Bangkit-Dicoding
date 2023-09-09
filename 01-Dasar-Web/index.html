@@ -7,7 +7,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
+
+    <script src="scripts/template.js"></script>
+    <script src="scripts/index.js"></script>
   </head>
 
   <body>
@@ -23,7 +27,7 @@
     <main>
       <article class="section home">
         <aside>
-          <img src="images/foto.png" />
+          <img src="images/foto.png" loading="lazy" />
         </aside>
         <section>
           <h2>Hello, my name is</h2>
@@ -37,63 +41,87 @@
         </section>
       </article>
       <article class="section about">
-        <h1>About Me</h1>
+        <div class="about-header">
+          <h1>About Me</h1>
 
-        <section class="about-buttons">
-          <button class="selected">Education</button>
-          <button onclick="test('hai')">Skills</button>
-          <button>Past Experience</button>
-        </section>
-
-        <div class="education">
-          <section>
-            <h1>My Education</h1>
-            <div class="edu-card">
-              <h2>SMAK 1 BPK Penabur Bandung</h2>
-              <p>2017 - 2020 (High School Diploma)</p>
-            </div>
-            <div class="edu-card">
-              <h2>Institut Teknologi Bandung</h2>
-              <p>
-                2020 - Now (School of Electrical Engineering and Informatics)
-              </p>
-            </div>
+          <section class="about-buttons">
+            <button id="education-button" onclick="test('education-button')">
+              Education
+            </button>
+            <button id="skills-button" onclick="test('skills-button')">
+              Skills
+            </button>
           </section>
-          <aside>
-            <img src="images/school.png" />
-          </aside>
         </div>
+
+        <div id="about-content" class="about-content"></div>
       </article>
-      <article class="home">
+      <article class="section works">
         <section>
-          <h2>Hello, my name is</h2>
-          <h1>Yakobus Iryanto Prasethio</h1>
-          <p>
-            I am an undergraduate student at Institut Teknologi Bandung
-            currently participating in the Bangkit 2023 Batch 2 Program. I'm
-            majoring in Information Technology and I am very passionate about
-            web programming.
-          </p>
+          <h1>Some of the works I've done</h1>
+          <div class="works-content">
+            <div class="works-card">
+              <h2>BNMO Banking App</h2>
+              <p>
+                A banking website with admin and customer sides. Built using
+                Vue, TailwindCSS, and Go.
+              </p>
+              <a href="https://github.com/BNMO-Projects/BNMO-Banking-Frontend"
+                >Link to the front-end repository</a
+              >
+              <a href="https://github.com/BNMO-Projects/BNMO-Banking-Backend"
+                >Link to the back-end repository</a
+              >
+              <a href="https://bnmo.netlify.app/">Link to the deployed app</a>
+            </div>
+            <div class="works-card">
+              <h2>Binotify Web Music Player</h2>
+              <p>
+                A music player built on the web with REST and SOAP services.
+                Also includes PHP and React front-end services.
+              </p>
+              <a href="https://github.com/YakobusIP/Tubes-2-WBD-Binotify"
+                >Link to the project repository</a
+              >
+            </div>
+            <div class="works-card">
+              <h2>Majika Ordering Android App</h2>
+              <p>
+                Built using Kotlin. Feature includes a twibbon, maps, menu list,
+                cart, and a payment QR system.
+              </p>
+              <a href="https://github.com/sivaren/if3210-2023-android-nkr"
+                >Link to the project repository</a
+              >
+            </div>
+          </div>
         </section>
       </article>
-      <article class="home">
-        <aside>
-          <img src="images/foto.png" />
-        </aside>
+      <article class="section contact">
+        <h1>Contact Me</h1>
+        <p>Please feel free to reach out to me</p>
         <section>
-          <h2>Hello, my name is</h2>
-          <h1>Yakobus Iryanto Prasethio</h1>
-          <p>
-            I am an undergraduate student at Institut Teknologi Bandung
-            currently participating in the Bangkit 2023 Batch 2 Program. I'm
-            majoring in Information Technology and I am very passionate about
-            web programming.
-          </p>
+          <div class="contact-card">
+            <img src="images/mail.webp" />
+            <p>yakobusiryantoprasethio@gmail.com</p>
+          </div>
+          <div class="contact-card">
+            <img src="images/whatsapp.png" />
+            <p>+62 898-7481-816</p>
+          </div>
+          <div class="contact-card">
+            <img src="images/linkedin.png" />
+            <a href="https://www.linkedin.com/in/yakobus-iryanto-38096b179/"
+              >Linked In</a
+            >
+          </div>
+          <div class="contact-card">
+            <img src="images/instagram.svg" />
+            <p>@kobusryan</p>
+          </div>
         </section>
       </article>
     </main>
     <footer></footer>
   </body>
-
-  <script src="scripts/index.js"></script>
 </html>
