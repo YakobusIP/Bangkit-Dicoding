@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  background-color: #333333;
+  font-family: 'Montserrat', 'sans-serif';
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 2em;
+  color: white;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: white;
+  margin: 0;
+}
+
+p {
+  color: white;
+  line-height: 1.5;
+  margin: 0;
+}
+
+button {
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  font-size: 1em;
+  width: 10vw;
+}
+
+button:hover {
+  cursor: pointer;
+  scale: 1.2;
+  background-color: white;
+  color: black;
+  transition: ease-in-out;
+}
+
+button.selected {
+  background-color: white;
+  color: black;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 1rem 8rem 1rem 8rem;
+  background-color: #3498db;
+  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+}
+
+nav p:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.section {
+  display: flex;
+  padding: 2rem;
+  margin: auto;
+  min-height: 80vh;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2vw;
+}
+
+.home {
+  width: 70%;
+}
+
+.home p {
+  text-align: justify;
+}
+
+.home aside img,
+.education aside img {
+  width: 20vw;
+}
+
+.home section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  width: 65%;
+}
+
+.about {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.education {
+  display: flex;
+  column-gap: 2vw;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.education section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.about-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3vw;
+}
+
+.edu-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.edu-card:hover {
+  scale: 1.03;
+  transition: ease-in-out;
+}
