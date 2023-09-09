@@ -24,4 +24,5 @@ const test = (id) => {
 window.onload = () => {
   document.getElementById('about-content').innerHTML = education;
   document.getElementById('education-button').classList.add('selected');
+  console.log(document.getElementById('contact-section').scrollHeight);
 };
