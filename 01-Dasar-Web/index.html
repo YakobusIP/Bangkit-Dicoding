@@ -124,6 +124,18 @@
               >
             </div>
           </div>
+          <h2>
+            And not to forget, this portfolio project repository as well...
+          </h2>
+          <div class="works-card">
+            <h2>Bangkit Dicoding Projects</h2>
+            <p>Used for Dicoding's Final Projects.</p>
+            <a
+              href="https://github.com/YakobusIP/Bangkit-Dicoding"
+              target="_blank"
+              >Link to the project repository</a
+            >
+          </div>
         </section>
       </article>
       <article id="contact-section" class="section contact">
@@ -139,6 +151,10 @@
             <p>+62 898-7481-816</p>
           </div>
           <div class="contact-card">
+            <img src="images/instagram.svg" alt="instagram" loading="lazy" />
+            <p>@kobusryan</p>
+          </div>
+          <div class="contact-card">
             <img src="images/linkedin.png" alt="linkedin" loading="lazy" />
             <a
               href="https://www.linkedin.com/in/yakobus-iryanto-38096b179/"
@@ -147,12 +163,37 @@
             >
           </div>
           <div class="contact-card">
-            <img src="images/instagram.svg" alt="instagram" loading="lazy" />
-            <p>@kobusryan</p>
+            <img src="images/github.png" alt="github" loading="lazy" />
+            <a href="https://github.com/YakobusIP" target="_blank">Github</a>
           </div>
         </section>
       </article>
     </main>
-    <footer></footer>
+    <footer>
+      <nav class="footer-nav">
+        <p onclick="scrollToSection('home-section')">Home</p>
+        <p onclick="scrollToSection('about-section')">About</p>
+        <p onclick="scrollToSection('works-section')">Work Samples</p>
+        <p onclick="scrollToSection('contact-section')">Contact</p>
+      </nav>
+      <p>
+        Copyright &#169; Yakobus Iryanto Prasethio 2023. All Rights Reserved.
+      </p>
+      <button class="back-to-top" onclick="scrollToSection('home-section')">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="black"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18"
+          />
+        </svg>
+      </button>
+    </footer>
   </body>
 </html>

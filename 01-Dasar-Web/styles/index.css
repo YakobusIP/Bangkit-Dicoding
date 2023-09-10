@@ -106,6 +106,40 @@ main {
   cursor: pointer;
 }
 
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #3498db;
+  padding: 1rem;
+  row-gap: 1rem;
+  text-align: center;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+button.back-to-top {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  width: fit-content;
+  padding: 0.5rem;
+}
+
+button.back-to-top svg {
+  width: 1.5vw;
+}
+
 @media only screen and (max-width: 1024px) {
   .main-header {
     padding: 2rem 4rem;
@@ -173,5 +207,9 @@ main {
   .education aside img,
   .skills aside img {
     width: 60vw;
+  }
+
+  button.back-to-top {
+    visibility: hidden;
   }
 }
