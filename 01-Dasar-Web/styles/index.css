@@ -55,13 +55,14 @@ button.selected {
   color: black;
 }
 
-header {
+.main-header {
   position: sticky;
   top: 0;
   padding: 1rem 8rem;
   background-color: #3498db;
   filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
     drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  z-index: 1;
 }
 
 nav {
@@ -106,7 +107,7 @@ main {
 }
 
 @media only screen and (max-width: 1024px) {
-  header {
+  .main-header {
     padding: 2rem 4rem;
   }
 
