@@ -28,6 +28,10 @@ a {
   color: #3498db;
 }
 
+img {
+  user-select: none;
+}
+
 button {
   padding: 1rem;
   border: 1px solid white;
@@ -90,6 +94,17 @@ main {
   width: 20vw;
 }
 
+.white-link {
+  color: white;
+  text-decoration: none;
+}
+
+.white-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1024px) {
   header {
     padding: 2rem 4rem;
@@ -150,7 +165,6 @@ main {
     align-items: center;
     justify-content: center;
     min-height: 90vh;
-    scroll-snap-align: start;
     margin: 2rem 0;
   }
 

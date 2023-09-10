@@ -22,17 +22,21 @@
   <body dir="ltr">
     <header>
       <nav>
-        <p>Home</p>
-        <p>About</p>
-        <p>Work Samples</p>
-        <p>Contact</p>
+        <p onclick="scrollToSection('home-section')">Home</p>
+        <p onclick="scrollToSection('about-section')">About</p>
+        <p onclick="scrollToSection('works-section')">Work Samples</p>
+        <p onclick="scrollToSection('contact-section')">Contact</p>
       </nav>
     </header>
 
     <main>
       <article id="home-section" class="section home">
         <aside>
-          <img src="images/foto.png" loading="lazy" />
+          <img
+            src="images/foto.png"
+            alt="Yakobus Iryanto Prasethio"
+            loading="lazy"
+          />
         </aside>
         <section>
           <h2>Hello, my name is</h2>
@@ -47,18 +51,21 @@
       </article>
       <article id="about-section" class="section about">
         <section>
-          <div class="about-header">
+          <header class="about-header">
             <h1>About Me</h1>
 
             <section class="about-buttons">
-              <button id="education-button" onclick="test('education-button')">
+              <button
+                id="education-button"
+                onclick="switchAbout('education-button')"
+              >
                 Education
               </button>
-              <button id="skills-button" onclick="test('skills-button')">
+              <button id="skills-button" onclick="switchAbout('skills-button')">
                 Skills
               </button>
             </section>
-          </div>
+          </header>
 
           <div id="about-content" class="about-content"></div>
         </section>
@@ -73,13 +80,19 @@
                 A banking website with admin and customer sides. Built using
                 Vue, TailwindCSS, and Go.
               </p>
-              <a href="https://github.com/BNMO-Projects/BNMO-Banking-Frontend"
+              <a
+                href="https://github.com/BNMO-Projects/BNMO-Banking-Frontend"
+                target="_blank"
                 >Link to the front-end repository</a
               >
-              <a href="https://github.com/BNMO-Projects/BNMO-Banking-Backend"
+              <a
+                href="https://github.com/BNMO-Projects/BNMO-Banking-Backend"
+                target="_blank"
                 >Link to the back-end repository</a
               >
-              <a href="https://bnmo.netlify.app/">Link to the deployed app</a>
+              <a href="https://bnmo.netlify.app/" target="_blank"
+                >Link to the deployed app</a
+              >
             </div>
             <div class="works-card">
               <h2>Binotify Web Music Player</h2>
@@ -87,7 +100,9 @@
                 A music player built on the web with REST and SOAP services.
                 Also includes PHP and React front-end services.
               </p>
-              <a href="https://github.com/YakobusIP/Tubes-2-WBD-Binotify"
+              <a
+                href="https://github.com/YakobusIP/Tubes-2-WBD-Binotify"
+                target="_blank"
                 >Link to the project repository</a
               >
             </div>
@@ -97,7 +112,9 @@
                 Built using Kotlin. Feature includes a twibbon, maps, menu list,
                 cart, and a payment QR system.
               </p>
-              <a href="https://github.com/sivaren/if3210-2023-android-nkr"
+              <a
+                href="https://github.com/sivaren/if3210-2023-android-nkr"
+                target="_blank"
                 >Link to the project repository</a
               >
             </div>
@@ -109,21 +126,23 @@
         <p>Please feel free to reach out to me</p>
         <section>
           <div class="contact-card">
-            <img src="images/mail.webp" alt="email" />
+            <img src="images/mail.webp" alt="email" loading="lazy" />
             <p>yakobusiryantoprasethio@gmail.com</p>
           </div>
           <div class="contact-card">
-            <img src="images/whatsapp.png" alt="phone number" />
+            <img src="images/whatsapp.png" alt="phone number" loading="lazy" />
             <p>+62 898-7481-816</p>
           </div>
           <div class="contact-card">
-            <img src="images/linkedin.png" alt="linkedin" />
-            <a href="https://www.linkedin.com/in/yakobus-iryanto-38096b179/"
+            <img src="images/linkedin.png" alt="linkedin" loading="lazy" />
+            <a
+              href="https://www.linkedin.com/in/yakobus-iryanto-38096b179/"
+              target="_blank"
               >Linked In</a
             >
           </div>
           <div class="contact-card">
-            <img src="images/instagram.svg" alt="instagram" />
+            <img src="images/instagram.svg" alt="instagram" loading="lazy" />
             <p>@kobusryan</p>
           </div>
         </section>

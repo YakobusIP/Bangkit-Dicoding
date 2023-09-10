@@ -1,6 +1,11 @@
-const aboutContent = [education, skills];
+const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  element.scrollIntoView({
+    behavior: 'smooth'
+  });
+};
 
-const test = (id) => {
+const switchAbout = (id) => {
   Array.from(document.getElementsByClassName('selected')).forEach((item) => {
     item.classList.remove('selected');
   });
