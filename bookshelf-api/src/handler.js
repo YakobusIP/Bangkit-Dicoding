@@ -83,17 +83,12 @@ const getAllBooksHandler = (request, h) => {
     } else {
       result = books.filter((book) => book.reading === true)
     }
-    console.log(result)
   } else if (finished) {
     if (finished === '0') {
-      result = books.filter((book) => {
-        console.log(book.name, book.finished)
-        return book.finished === false
-      })
+      result = books.filter((book) => book.finished === false)
     } else {
       result = books.filter((book) => book.finished === true)
     }
-    console.log(result)
   }
 
   const response = h.response({
