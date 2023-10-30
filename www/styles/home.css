@@ -1,0 +1,17 @@
+.home p {
+  text-align: justify;
+}
+
+.home section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  width: 65%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .home section {
+    text-align: center;
+    width: 90%;
+  }
+}

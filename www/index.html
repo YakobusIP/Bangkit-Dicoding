@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yakobus's Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/works.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/scrollbar.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Meta tags -->
+    <meta
+      name="description"
+      content="Yakobus Iryanto Prasethio's personal portfolio website. I am a web developer with a passion for building beautiful and functional websites and web applications. I have experience with a variety of programming languages and technologies, including HTML, CSS, and JavaScript."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Scripts -->
+    <script src="scripts/template.js"></script>
+    <script src="scripts/index.js"></script>
+  </head>
+
+  <body dir="ltr">
+    <header class="main-header">
+      <nav>
+        <p onclick="scrollToSection('home-section')">Home</p>
+        <p onclick="scrollToSection('about-section')">About</p>
+        <p onclick="scrollToSection('works-section')">Work Samples</p>
+        <p onclick="scrollToSection('contact-section')">Contact</p>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home section -->
+      <article id="home-section" class="section home">
+        <aside>
+          <img
+            src="images/foto.png"
+            alt="Yakobus Iryanto Prasethio"
+            loading="lazy"
+          />
+        </aside>
+        <section>
+          <h2>Hello, my name is</h2>
+          <h1>Yakobus Iryanto Prasethio</h1>
+          <p>
+            I am an undergraduate student at Institut Teknologi Bandung
+            currently participating in the Bangkit 2023 Batch 2 Program. I'm
+            majoring in Information Technology and I am very passionate about
+            web programming.
+          </p>
+        </section>
+      </article>
+
+      <!-- About section -->
+      <article id="about-section" class="section about">
+        <section>
+          <header class="about-header">
+            <h1>About Me</h1>
+
+            <section class="about-buttons">
+              <button
+                id="education-button"
+                onclick="switchAbout('education-button')"
+                type="button"
+              >
+                Education
+              </button>
+              <button
+                id="skills-button"
+                onclick="switchAbout('skills-button')"
+                type="button"
+              >
+                Skills
+              </button>
+            </section>
+          </header>
+
+          <div id="about-content" class="about-content"></div>
+        </section>
+      </article>
+
+      <!-- Past works section -->
+      <article id="works-section" class="section works">
+        <section>
+          <h1>Some of the works I've done</h1>
+          <div class="works-content">
+            <div class="works-card">
+              <h2>BNMO Banking App</h2>
+              <p>
+                A banking website with admin and customer sides. Built using
+                Vue, TailwindCSS, and Go.
+              </p>
+              <a
+                href="https://github.com/BNMO-Projects/BNMO-Banking-Frontend"
+                target="_blank"
+                >Link to the front-end repository</a
+              >
+              <a
+                href="https://github.com/BNMO-Projects/BNMO-Banking-Backend"
+                target="_blank"
+                >Link to the back-end repository</a
+              >
+              <a href="https://bnmo.netlify.app/" target="_blank"
+                >Link to the deployed app</a
+              >
+            </div>
+            <div class="works-card">
+              <h2>Binotify Web Music Player</h2>
+              <p>
+                A music player built on the web with REST and SOAP services.
+                Also includes PHP and React front-end services.
+              </p>
+              <a
+                href="https://github.com/YakobusIP/Tubes-2-WBD-Binotify"
+                target="_blank"
+                >Link to the project repository</a
+              >
+            </div>
+            <div class="works-card">
+              <h2>Majika Ordering Android App</h2>
+              <p>
+                Built using Kotlin. Feature includes a twibbon, maps, menu list,
+                cart, and a payment QR system.
+              </p>
+              <a
+                href="https://github.com/sivaren/if3210-2023-android-nkr"
+                target="_blank"
+                >Link to the project repository</a
+              >
+            </div>
+          </div>
+          <h2>
+            And not to forget, this portfolio project repository as well...
+          </h2>
+          <div class="works-card">
+            <h2>Bangkit Dicoding Projects</h2>
+            <p>Used for Dicoding's Final Projects.</p>
+            <a
+              href="https://github.com/YakobusIP/Bangkit-Dicoding"
+              target="_blank"
+              >Link to the project repository</a
+            >
+          </div>
+        </section>
+      </article>
+
+      <!-- Contact section -->
+      <article id="contact-section" class="section contact">
+        <h1>Contact Me</h1>
+        <p>Please feel free to reach out to me</p>
+        <section>
+          <div class="contact-card">
+            <img src="images/mail.webp" alt="email" loading="lazy" />
+            <p>yakobusiryantoprasethio@gmail.com</p>
+          </div>
+          <div class="contact-card">
+            <img src="images/whatsapp.png" alt="phone number" loading="lazy" />
+            <p>+62 898-7481-816</p>
+          </div>
+          <div class="contact-card">
+            <img src="images/instagram.svg" alt="instagram" loading="lazy" />
+            <p>@kobusryan</p>
+          </div>
+          <div class="contact-card">
+            <img src="images/linkedin.png" alt="linkedin" loading="lazy" />
+            <a
+              href="https://www.linkedin.com/in/yakobus-iryanto-38096b179/"
+              target="_blank"
+              >Linked In</a
+            >
+          </div>
+          <div class="contact-card">
+            <img src="images/github.png" alt="github" loading="lazy" />
+            <a href="https://github.com/YakobusIP" target="_blank">Github</a>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <nav class="footer-nav">
+        <p onclick="scrollToSection('home-section')">Home</p>
+        <p onclick="scrollToSection('about-section')">About</p>
+        <p onclick="scrollToSection('works-section')">Work Samples</p>
+        <p onclick="scrollToSection('contact-section')">Contact</p>
+      </nav>
+      <p>
+        Copyright &#169; Yakobus Iryanto Prasethio 2023. All Rights Reserved.
+      </p>
+      <button
+        class="back-to-top"
+        type="button"
+        onclick="scrollToSection('home-section')"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="black"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18"
+          />
+        </svg>
+      </button>
+    </footer>
+  </body>
+</html>
