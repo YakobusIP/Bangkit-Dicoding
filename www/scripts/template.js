@@ -13,53 +13,53 @@ const education = `<div class="education">
   </div>
 </section>
 <aside>
-  <img src="images/school.png" loading="lazy" alt="school" />
+  <img src="https://storage.googleapis.com/profile-web-bucket/school.png" loading="lazy" alt="school" />
 </aside>
-</div>`;
+</div>`
 
 const skills = `<div class="skills">
 <aside>
-  <img src="images/skills.png" loading="lazy" alt="skills" />
+  <img src="https://storage.googleapis.com/profile-web-bucket/skills.png" loading="lazy" alt="skills" />
 </aside>
 <section>
   <h1>My Skills</h1>
   <div class="skills-grid">
     <div class="skills-card">
       <h2>React</h2>
-      <img src="images/react.png" loading="lazy" alt="react" />
+      <img src="https://storage.googleapis.com/profile-web-bucket/react.png" loading="lazy" alt="react" />
     </div>
     <div class="skills-card">
       <h2>Vue</h2>
-      <img src="images/vue.png" loading="lazy" alt="vue" />
+      <img src="https://storage.googleapis.com/profile-web-bucket/vue.png" loading="lazy" alt="vue" />
     </div>
     <div class="skills-card">
       <h2>NextJS</h2>
-      <img src="images/nextjs.png" loading="lazy" alt="nextjs" />
+      <img src="https://storage.googleapis.com/profile-web-bucket/nextjs.png" loading="lazy" alt="nextjs" />
     </div>
     <div class="skills-card">
       <h2>Java</h2>
-      <img src="images/java.png" loading="lazy" alt="java" />
+      <img src="https://storage.googleapis.com/profile-web-bucket/java.png" loading="lazy" alt="java" />
     </div>
     <div class="skills-card">
       <h2>C/C++/C#</h2>
-      <img src="images/c.png" loading="lazy" alt="c" />
+      <img src="https://storage.googleapis.com/profile-web-bucket/c.png" loading="lazy" alt="c" />
     </div>
     <div class="skills-card">
       <h2>Go</h2>
-      <img src="images/go.png" loading="lazy" alt="go" />
+      <img src="https://storage.googleapis.com/profile-web-bucket/go.png" loading="lazy" alt="go" />
     </div>
     <div class="skills-card">
       <h2>Python</h2>
-      <img src="images/python.webp" loading="lazy" alt="python" />
+      <img src="https://storage.googleapis.com/profile-web-bucket/python.webp" loading="lazy" alt="python" />
     </div>
     <div class="skills-card">
       <h2>Git</h2>
-      <img src="images/git.png" loading="lazy" alt="git" />
+      <img src="https://storage.googleapis.com/profile-web-bucket/git.png" loading="lazy" alt="git" />
     </div>
     <div class="skills-card">
       <h2>Docker</h2>
-      <img src="images/docker.png" loading="lazy" alt="docker" />
+      <img src="https://storage.googleapis.com/profile-web-bucket/docker.png" loading="lazy" alt="docker" />
     </div>
   </div>
 </section>
-</div>`;
+</div>`
